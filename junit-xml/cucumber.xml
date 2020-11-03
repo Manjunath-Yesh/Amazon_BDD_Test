@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="94.452946">
+<testcase classname="Search and Buy an Item" name="Successful Login with Valid Credentials" time="94.452946">
+<failure message="org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-APRU6N4', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'&#10;Driver info: io.appium.java_client.AppiumDriver&#10;Capabilities {app: C:\Users\Manjunath\OneDrive..., appPackage: com.amazon.mShop.android.sh..., databaseEnabled: false, desired: {app: C:\Users\Manjunath\OneDrive..., platformName: android}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: edd8ce1e-edcc-44b9-8da7-d8fa01eb6b4b&#10;*** Element info: {Using=xpath, value=//android.widget.TextView[contains(@text,'samsung mobile phones')]}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)&#13;&#10;&#9;at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)&#13;&#10;&#9;at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)&#13;&#10;&#9;at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)&#13;&#10;&#9;at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)&#13;&#10;&#9;at pageObjects.LoginAndSearchPage.randomlySelectSearchItem(LoginAndSearchPage.java:123)&#13;&#10;&#9;at stepDefinations.Steps.user_should_select_the_Items_Randomly(Steps.java:79)&#13;&#10;&#9;at ✽.User should select the Items Randomly(file:Features/AmzonSeachFunctionality.feature:11)&#13;&#10;"><![CDATA[Given User Launch Amazon Mobile App and select on "Already a customer? Sign in" Already a customer? Sign in Option.passed
+And User Enter the Email as "manjunathqa21@gmail.com".......................passed
+And User clicks on "Continue" Continue button...............................passed
+And User Enter Password as "$ER$4er4" and clicks on "Sign In" Sign In Button.passed
+And User is Landed to Amazon Home page......................................passed
+And User Entered the search as "samsung mobile phones"......................passed
+Then User should select the Items Randomly..................................failed
+And User should able to buy the selected Item "3"...........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-APRU6N4', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {app: C:\Users\Manjunath\OneDrive..., appPackage: com.amazon.mShop.android.sh..., databaseEnabled: false, desired: {app: C:\Users\Manjunath\OneDrive..., platformName: android}, deviceApiLevel: 30, deviceManufacturer: Google, deviceModel: sdk_gphone_x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: edd8ce1e-edcc-44b9-8da7-d8fa01eb6b4b
+*** Element info: {Using=xpath, value=//android.widget.TextView[contains(@text,'samsung mobile phones')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at pageObjects.LoginAndSearchPage.randomlySelectSearchItem(LoginAndSearchPage.java:123)
+	at stepDefinations.Steps.user_should_select_the_Items_Randomly(Steps.java:79)
+	at ✽.User should select the Items Randomly(file:Features/AmzonSeachFunctionality.feature:11)
+]]></failure>
+</testcase>
+</testsuite>
